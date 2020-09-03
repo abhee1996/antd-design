@@ -4,30 +4,99 @@
   text-align: center;
 }
 
+@width: 30%;
+@height: @width + 10px;
+@background-color1: #00A5BA;
+@color1: #00A5BA;
+@background-color2: cyan;
+@color2: cyan;
+@background-color3: #faad14;
+@color3: #faad14;
+@background-color4 : grey;
+@color4 : grey;
+@background-color5 : #1890ff;
+@color5 : #1890ff;
+@background-color6: #FFAA51;
+@color6: #FFAA51;
+@background-color7:#1DA57A;
+@color7:#1DA57A;
+@background-color8:#F41B35;
+@color8:#F41B35;
+
+.footer{
+  background-color:@background-color4;
+  color :@color3;
+  text-align : center
+}
+.header {
+  //width: @width;
+  //height: @height;
+  background-color:@background-color3; // result is #223355
+  color :#111;
+  
+}
+.breadcrumb{
+  background-color:@background-color5;
+  color: @color4;
+  margin: '16px 0px 0px 0px';
+  padding: '0 24px' ;
+
+}
+.sider {
+  background-color:@background-color1;
+}
+.menu{
+  background-color:@background-color1;
+  color: #111
+}
+.menu-items{
+  background-color: @background-color7;
+
+}
+.tableColumn{
+  .menu-items;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.content{
+  padding: 24px;
+  margin: 0px;
+  min-height: 280px;
+  background-color: #fff;
+}
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+// .App-link {
+//   color: #61dafb;
+// }
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #111;
 }
 
-.App-link {
-  color: #61dafb;
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
 }
 
 @keyframes App-logo-spin {
